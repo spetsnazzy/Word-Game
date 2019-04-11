@@ -68,15 +68,15 @@ def gameplay(prev_word, final_word, dictionary):
     input_word = input("Please enter a word: ")
     if(fourletters(input_word) == False):
         print("Please enter a valid word" + '\n')
-        print("Previous word was: " + '\n')
+        print("Previous word was: " +  prev_word)
         gameplay(prev_word, final_word, dictionary)
     if(differences(input_word, prev_word) == False):
         print("Please enter a valid word" + '\n')
-        print("Previous word was: " + '\n')
+        print("Previous word was: " +  prev_word)
         gameplay(prev_word, final_word, dictionary)
     if(dictionarycheck(input_word, dictionary) == False):
         print("Please enter a valid word" + '\n')
-        print("Previous word was: " + '\n')
+        print("Previous word was: " +  prev_word)
         gameplay(prev_word, final_word, dictionary)
 
     if(input_word == final_word):
