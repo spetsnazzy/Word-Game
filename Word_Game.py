@@ -34,7 +34,6 @@ def randomword(words):
 # Verifies the input has 4 letters
 def fourletters(input_word):
     if(len(input_word) != 4):
-        print("Please enter a valid word" + '\n')
         return False
     else:
         return True
@@ -69,12 +68,15 @@ def gameplay(prev_word, final_word, dictionary):
     input_word = input("Please enter a word: ")
     if(fourletters(input_word) == False):
         print("Please enter a valid word" + '\n')
+        print("Previous word was: " + '\n')
         gameplay(prev_word, final_word, dictionary)
     if(differences(input_word, prev_word) == False):
         print("Please enter a valid word" + '\n')
+        print("Previous word was: " + '\n')
         gameplay(prev_word, final_word, dictionary)
     if(dictionarycheck(input_word, dictionary) == False):
         print("Please enter a valid word" + '\n')
+        print("Previous word was: " + '\n')
         gameplay(prev_word, final_word, dictionary)
 
     if(input_word == final_word):
