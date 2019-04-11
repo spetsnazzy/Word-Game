@@ -50,8 +50,6 @@ def differences(input_word, prev_word):
 
         counter = counter + 1
 
-    print(diff)
-
     if(diff > 1):
         return False
     else:
