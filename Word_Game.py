@@ -1,3 +1,6 @@
+# THIS IS A TEST
+# FOR GITHUB
+
 import random
 
 ## Initializes the game elements
@@ -75,7 +78,7 @@ def gameplay(prev_word, final_word, dictionary):
         print("Please enter a valid word" + '\n')
         print("Previous word was: " +  prev_word)
         gameplay(prev_word, final_word, dictionary)
-        
+
     if(dictionarycheck(input_word, dictionary) == False):
         print("Please enter a valid word" + '\n')
         print("Previous word was: " +  prev_word)
