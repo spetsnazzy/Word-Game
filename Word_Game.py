@@ -1,6 +1,3 @@
-# THIS IS A TEST
-# FOR GITHUB
-
 import random
 
 ## Initializes the game elements
